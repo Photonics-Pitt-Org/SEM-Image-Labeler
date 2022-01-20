@@ -1,4 +1,4 @@
-# Vivswan-SEM-Image-Measurement-Labeler
+# SEM Image Measurement Labeler
 
 Usage:
  1. Open and Run main.m in MatLab.
