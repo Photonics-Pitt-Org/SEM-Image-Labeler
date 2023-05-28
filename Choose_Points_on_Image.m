@@ -1,9 +1,10 @@
-function [X, Y]= Choose_Points_on_Image(Image, Scale)
+function [X, Y]= Choose_Points_on_Image(Image, Scale, Coordinate_Scalebar)
     X = []; Y = [];
     imshow(Image);
     size_image = size(Image);
     title('Measure Features: Click for point A, Click again for point B (For Zoom: z (+), c (-), x (reset))');
     text(20, 20, ['Scalebar: ' num2str(Scale) '\mum'], 'FontSize', 12, 'Color', 'r');
+    line(Coordinate_Scalebar(1, :), Coordinate_Scalebar(2, :), 'LineWidth', 3, 'Color', 'red');
     
     while 0<1
         [x, y, b] = ginput(1);

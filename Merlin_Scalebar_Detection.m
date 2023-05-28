@@ -1,4 +1,4 @@
-function [ScaleBar_Pixels,ScaleBar_Locsx, ScaleBar_Locsy] = Scalebar_Detection_Merlin(Image)
+function [ScaleBar_Pixels,ScaleBar_Locsx, ScaleBar_Locsy] = Merlin_Scalebar_Detection(Image)
 %% Scalebar Image Definition 
 Scale_Image_1=zeros(14);
 Scale_Image_1(:,14)=ones(14,1);
